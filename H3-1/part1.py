@@ -28,7 +28,8 @@ def plot_histogram(data, title, xlabel, ylabel='Frequency'):
     plt.title(title)
     plt.xlabel(xlabel)
     plt.ylabel(ylabel)
-    plt.show()
+    plt.savefig(title + '.png')
+    plt.close()
 
 
 if __name__ == "__main__":
@@ -37,6 +38,6 @@ if __name__ == "__main__":
     graph = build_graph(file_path)
     degree, closeness, betweenness = compute_centrality(graph)
 
-    plot_histogram(degree, 'Degree Centrality Histogram', 'Degree Centrality')
-    plot_histogram(closeness, 'Closeness Centrality Histogram', 'Closeness Centrality')
-    plot_histogram(betweenness, 'Betweenness Centrality Histogram', 'Betweenness Centrality')
+    plot_histogram(degree, 'Degree_Centrality_Histogram', 'Degree Centrality')
+    plot_histogram(closeness, 'Closeness_Centrality_Histogram', 'Closeness Centrality')
+    plot_histogram(betweenness, 'Betweenness_Centrality_Histogram', 'Betweenness Centrality')
