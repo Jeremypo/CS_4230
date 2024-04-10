@@ -32,4 +32,4 @@ output_file = 'graph_edges.txt'
 write_edges_to_file(graph, output_file)
 end_time = time.time()
 print(f"Edges written to {output_file}")
-print(f"Execution time: {end_time - start_time} seconds")
+#print(f"Execution time: {end_time - start_time} seconds")

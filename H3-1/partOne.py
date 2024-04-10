@@ -75,4 +75,4 @@ if __name__ == "__main__":
 
     end_time = datetime.datetime.now()
     execution_time = end_time - start_time
-    print(f"Time: {execution_time} (Total)")
+    #print(f"Time: {execution_time} (Total)")
